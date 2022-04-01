@@ -1,0 +1,125 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+:root
+{
+    --text-color: #123859;
+    --main-color: #419FD9;
+    --color-2: #03738C;
+    --color-3: #fff;
+}
+
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background: url(./img/chuva.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1
+{
+    text-align: center;
+    font-size: 3em;
+    color: var(--text-color);
+}
+main
+{
+    width: 28em;
+    height: 40.5em;
+    background: var(--color-3);
+    border-radius: 15px;
+    box-shadow: 0 0 2px #000;
+}
+main #calculadora
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5em;
+}
+
+main #calculadora h1
+{
+    text-align: justify;
+    font-size: 2.em;
+    color: var(--text-color);
+}
+
+main #calculadora label
+{
+    font-size: 2em;
+    margin-top: 2em;
+    color: var(--text-color);
+}
+
+main #calculadora input
+{
+    margin-top: 1.5em;
+    width: 3em;
+    height: 3em;
+    border-radius: 10px; 
+    font-size: 2em ;
+    text-align: center;
+    color: var(--text-color);
+    border: 1px solid var(--color-2);
+}
+
+main #calculadora input:focus{
+    outline: none;
+    box-shadow: 0 0 5px var(--color-2);
+}
+
+main #calculadora input::-webkit-inner-spin-button
+{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
+main #calculadora #btnCalcular
+{
+    margin-top: 1.5em;
+    width: 10em;
+    height: 3em;
+    font-size: 1.4em;
+    border-radius: 15px;
+    border: none;
+    color: var(--color-3);
+    background: var(--color-2);
+    cursor: pointer; 
+}
+
+main #displayResultado
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+    height: 20%;
+    border-radius: 10px;
+    color: #fff;
+    background: var(--text-color);
+    padding: 1em;
+    font-size: 1.6em ;
+}
+
+@media screen and (max-width:320px) {
+    main
+    {
+        width: 23em;
+    }
+}
